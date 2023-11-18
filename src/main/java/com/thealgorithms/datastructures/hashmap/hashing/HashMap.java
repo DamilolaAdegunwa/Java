@@ -68,10 +68,10 @@ public class HashMap {
         public Node findKey(int key) {
             if (!isEmpty()) {
                 Node temp = first;
-                if (temp.getKey() == key) return temp;
+                if (temp.getKey() == key){ return temp;}
 
                 while ((temp = temp.getNext()) != null) {
-                    if (temp.getKey() == key) return temp;
+                    if (temp.getKey() == key) {return temp;}
                 }
             }
             return null;

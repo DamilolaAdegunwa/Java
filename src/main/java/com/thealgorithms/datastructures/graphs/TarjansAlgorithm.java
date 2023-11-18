@@ -82,7 +82,7 @@ public class TarjansAlgorithm {
         Stack<Integer> st = new Stack<Integer>();
 
         for (int i = 0; i < V; i++) {
-            if (insertionTime[i] == -1) stronglyConnCompsUtil(i, lowTime, insertionTime, isInStack, st, graph);
+            if (insertionTime[i] == -1) {stronglyConnCompsUtil(i, lowTime, insertionTime, isInStack, st, graph);}
         }
 
         return SCClist;
